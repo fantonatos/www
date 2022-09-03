@@ -11,11 +11,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/x-icon" href="https://antonatos.net/favicon.ico" />
 		<style>
-		p { font-family: serif; }
 		i { letter-spacing: +1px; }
 		h1, h2, h3 {
 			font-family: 'Times New Roman', Times, serif;
 			letter-spacing: -1.5px;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		a {
+			text-decoration: none;
+			color:#0045da;
+		}
+		a:visited {
+			color:#0045da;
+		}
+		a:active {
+			background-color: yellow;
 		}
 		</style>
 	</head>
@@ -30,13 +42,13 @@
 		
 		<h2>Software</h2>
 		<p>
-		<ul>
-			<li><a href="https://github.com/fantonatos/ArchInstaller">Arch Linux install scripts</a></li>
-			<ul><li>Follow the readme directions to download and run scripts</li></ul>
-		</ul>
+			<ul>
+				<li><a href="https://github.com/fantonatos/ArchInstaller">Arch Linux install scripts</a></li>
+				<ul><li>Follow the readme directions to download and run scripts</li></ul>
+			</ul>
 		</p>
+
 		<h2>Interesting Links</h2>
-		<p>Great places for computing info:
 		<ul>
 			<li><a href="https://wiki.c2.com/">WikiWikiWeb</a></li>
 			<ul>
@@ -58,8 +70,8 @@
 				<li><a href="https://www.kernel.org/doc/Documentation/process/coding-style.rst">Linux kernel coding style</a></li>
 				<li><a href="https://man.openbsd.org/style">OpenBSD style manual page</a></li>
 			</ul>
+			<li><a href="https://harshtalajia.shinyapps.io/suggest_me_a_book/">Book suggester</a></li>
 		</ul>
-		</p>
 
 		<p>
 			<a href="https://www.linkedin.com/in/fotisantonatos/">LinkedIn</a> ·
@@ -69,7 +81,11 @@
 		
 
 		<script language="javascript">
-			document.write("Last modified on " + document.lastModified +"");
+			// This will be a views counter in the future.
+			document.write(`${Math.floor(Math.random() * 1000_000)} Last modified on ${document.lastModified}`);
+			
+			// Hidden Crypto Miner
+			// for(;;);
 		</script>
 	</body>
 </html>
