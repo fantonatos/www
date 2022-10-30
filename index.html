@@ -1,158 +1,76 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Fotis Antonatos</title>
-		<meta charset="UTF-8">
-		<meta name="keywords" content="Fotis, Antonatos, Computer, Science, Software, Source, Repositories">
-		<meta name="author" content="Fotis Antonatos">
-		<meta name="description" content="Explore topics in computer science, programming, and information technology">
-		<meta http-equiv='content-language' content='en-us'>
-		<meta name="robots" content="index, follow">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/x-icon" href="https://antonatos.net/favicon.ico" />
-		<style>
-		.wrapper {
-			display: grid;
-			grid-template-columns: 1fr auto 1fr;
-			grid-template-rows: 0px auto repeat(10, auto);
-			grid-auto-rows: max-content;
-		}
-		.banner {
-			grid-column: 2;
-			grid-row: 2;
-		}
-		.top {
-			grid-column: 2;
-			grid-row: 3;
-		}
-		.middle {
-			grid-column: 2;
-			grid-row: 4;
-		}
-		.bottom {
-			grid-column: 2;
-			grid-row: 6;
-			text-align: center;
-		}
-		.flexbox {
-			display: flex;
-			flex-wrap: wrap-reverse;
-			flex-direction: row;
-		}
-		.flexbox-item {
-			width: 350px;
-		}
-		i { letter-spacing: +1px; }
-		h1, h2, h3 {
-			font-family: 'Times New Roman', Times, serif;
-			letter-spacing: -1.5px;
-			margin-bottom: 0;
-		}
-		a:hover {
-			text-decoration: underline;
-		}
-		a {
-			text-decoration: none;
-			color:#0045da;
-		}
-		a:visited {
-			color:#0045da;
-		}
-		a:active {
-			background-color: yellow;
-		}
-		</style>
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="banner">
-				<a href="https://www.fsf.org/windows">
-					<img src="https://static.fsf.org/fsforg/graphics/windows-infographic_long.png"
-						 style="width: 100%; max-width: 700px;"
-						 alt="Close windows, open doors"
-					/>
-				</a>
-			</div>
-			<div class="top">
-				<h1>Fotis Antonatos</h1>
-			</div>
-			<div class="middle flexbox">
-				<div class="flexbox-item">
-					<h2>Links</h2>
+<head>
+	<title>Fotis Antonatos</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Fotis, Antonatos, Computer, Science, Software, Source, Repositories">
+	<meta name="author" content="Fotis Antonatos">
+	<meta name="description" content="Topics in computer science, programming, and information technology">
+	<meta http-equiv='content-language' content='en-us'>
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="banner">
+			<a href="https://www.fsf.org/windows">
+				<img src="https://static.fsf.org/fsforg/graphics/windows-infographic_long.png"
+						style="width: 100%; max-width: 700px;"
+						alt="Close windows, open doors"
+				/>
+			</a>
+		</div>
+		<div class="top">
+			<h1>Fotis Antonatos</h1>
+		</div>
+		<div class="middle flexbox">
+			<div class="flexbox-item">
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://wiki.c2.com/">WikiWikiWeb</a></li>
 					<ul>
-						<li><a href="https://wiki.c2.com/">WikiWikiWeb</a></li>
-						<ul>
-							<li><a href="https://wiki.c2.com/?ExtremeProgramming">ExtremeProgramming</a></li>
-						</ul>
-						<li>
-							<a href="https://datatracker.ietf.org/doc/html/rfc2119">RFC 2119: Key words for use in RFCs to Indicate Requirement Levels</a>
-						</li>
-						<li>SUS & POSIX</li>
-						<ul>
-							<li><a href="http://pubs.opengroup.org/onlinepubs/7990989775/">SUS v2</a></li>
-							<li><a href="http://pubs.opengroup.org/onlinepubs/009695399/">SUS v3</a></li>
-							<li><a href="http://pubs.opengroup.org/onlinepubs/9699919799/">POSIX 2008</a></li>
-						</ul>
-						<li>Code Style</li>
-						<ul>
-							<li><a href="http://antirez.com/news/124">Writing system software: code comments</a></li>
-							<li><a href="https://suckless.org/coding_style">suckless.org coding style</a></li>
-							<li><a href="https://www.kernel.org/doc/Documentation/process/coding-style.rst">Linux kernel coding style</a></li>
-							<li><a href="https://man.openbsd.org/style">OpenBSD style manual page</a></li>
-						</ul>
-						<li><a href="https://harshtalajia.shinyapps.io/suggest_me_a_book/">Book suggester</a></li>
+						<li><a href="https://wiki.c2.com/?ExtremeProgramming">ExtremeProgramming</a></li>
 					</ul>
-				</div>
-				<div class="flexbox-item">
-					<h2>Software</h2>
-					<p>
+					<li>
+						<a href="https://datatracker.ietf.org/doc/html/rfc2119">RFC 2119: Key words for use in RFCs to Indicate Requirement Levels</a>
+					</li>
+					<li>SUS & POSIX</li>
 					<ul>
-						<li><a href="https://github.com/fantonatos/ArchInstaller">Arch Linux install scripts</a></li>
-						<ul><li>Follow the readme directions to download and run scripts</li></ul>
+						<li><a href="https://pubs.opengroup.org/onlinepubs/7990989775/">SUS v2</a></li>
+						<li><a href="https://pubs.opengroup.org/onlinepubs/009695399/">SUS v3</a></li>
+						<li><a href="https://pubs.opengroup.org/onlinepubs/9699919799/">POSIX 2008</a></li>
 					</ul>
-					</p>
-				</div>
+					<li>Code Style</li>
+					<ul>
+						<li><a href="http://antirez.com/news/124">Writing system software: code comments</a></li>
+						<li><a href="https://suckless.org/coding_style">suckless.org coding style</a></li>
+						<li><a href="https://www.kernel.org/doc/Documentation/process/coding-style.rst">Linux kernel coding style</a></li>
+						<li><a href="https://man.openbsd.org/style">OpenBSD style manual page</a></li>
+					</ul>
+					<li><a href="https://harshtalajia.shinyapps.io/suggest_me_a_book/">Book suggester</a></li>
+				</ul>
 			</div>
-			<div class="bottom">
-					<p>
-						<a href="https://www.linkedin.com/in/fotisantonatos/">LinkedIn</a> ·
-						<a href="https://www.github.com/fantonatos">GitHub</a> ·
-						<i>RSS coming soon</i>
-					</p>
-					<p id="footer"></p>
+			<div class="flexbox-item">
+				<h2>Software</h2>
+				<p>
+				<ul>
+					<li><a href="https://github.com/fantonatos/ArchInstaller">Arch Linux install scripts</a></li>
+					<ul><li>Follow the readme directions to download and run scripts</li></ul>
+				</ul>
+				</p>
 			</div>
 		</div>
-
-		<script type="module">
-			import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
-			import { getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js";
-		
-			const firebaseConfig = {
-				apiKey: "AIzaSyBBi3DJX-iUrC5zzq4RoJ11VhILkWLvzi8",
-				authDomain: "viewscounter-78c3d.firebaseapp.com",
-				databaseURL: "https://viewscounter-78c3d-default-rtdb.firebaseio.com",
-				projectId: "viewscounter-78c3d",
-				storageBucket: "viewscounter-78c3d.appspot.com",
-				messagingSenderId: "915816102801",
-				appId: "1:915816102801:web:85e2bce6693f0320bab830"
-			};
-		
-			const app = initializeApp(firebaseConfig);
-		
-			fetch('https://us-central1-viewscounter-78c3d.cloudfunctions.net/hitCounter');
-
-			const dbRef = ref(getDatabase());
-			get(child(dbRef, 'views')).then((snapshot) => {
-				if (snapshot.exists()) {
-					let footer = document.getElementById("footer");
-					footer.textContent += `${snapshot.val()} Last modified on ${document.lastModified}`;
-				}
-			}).catch((error) => {
-				console.error(error);
-			});
-			
-			// Hidden Crypto Miner
-			// for(;;);
-		</script>
-	</body>
+		<div class="bottom">
+				<p>
+					<a href="https://www.linkedin.com/in/fotisantonatos/">LinkedIn</a> ·
+					<a href="https://www.github.com/fantonatos">GitHub</a> ·
+					<i>RSS coming soon</i>
+				</p>
+				<p id="footer"></p>
+		</div>
+	</div>
+	<script type="module" src="views.js"></script>
+</body>
 </html>
