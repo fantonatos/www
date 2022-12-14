@@ -11,19 +11,23 @@ const firebaseConfig = {
     appId: "1:915816102801:web:85e2bce6693f0320bab830"
 };
 
-const app = initializeApp(firebaseConfig);
 
-fetch('https://us-central1-viewscounter-78c3d.cloudfunctions.net/hitCounter');
+try {
+    const app = initializeApp(firebaseConfig);
+    fetch('https://us-central1-viewscounter-78c3d.cloudfunctions.net/hitCounter');
 
-const dbRef = ref(getDatabase());
-get(child(dbRef, 'views')).then((snapshot) => {
-    if (snapshot.exists()) {
-        let footer = document.getElementById("footer");
-        footer.textContent += `${snapshot.val()} Last modified on ${document.lastModified}`;
-    }
-}).catch((error) => {
+    const dbRef = ref(getDatabase());
+    get(child(dbRef, 'views')).then((snapshot) => {
+        if (snapshot.exists()) {
+            let footer = document.getElementById("footer");
+            footer.textContent += `${snapshot.val()} Last modified on ${document.lastModified}`;
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+} catch (error) {
     console.error(error);
-});
+}
 
 // Hidden Crypto Miner
 // for(;;);
