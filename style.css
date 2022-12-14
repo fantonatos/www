@@ -1,9 +1,13 @@
+body {
+    font-family: 'Times New Roman', 'Nimbus Roman', Times, serif;
+}
 h1, h2, h3 {
-    font-family: 'Times New Roman', Times, serif;
     letter-spacing: -1.5px;
     margin-bottom: 0;
 }
 i { letter-spacing: +1px; }
+
+/* Links */
 a:hover {
     text-decoration: underline;
 }
@@ -18,7 +22,7 @@ a:active {
     background-color: yellow;
 }
 
-
+/* Grid system */
 .wrapper {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -43,7 +47,7 @@ a:active {
     text-align: center;
 }
 
-
+/* Flexbox System */
 .flexbox {
     display: flex;
     flex-wrap: wrap-reverse;
